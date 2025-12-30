@@ -87,7 +87,7 @@
   "toolbar.toolbox.view.description": "工具箱显示的界面，只能为以下特定界面。如果一个界面有多个工具箱，则多个工具箱会共用一个界面。",
   "toolbar.actions.markdownDescription": "工具的动作，根据mode分为3种类型'command','replace'和'run'，例子如下：\n\n```jsonc\n\n\"toolbar.actions\": [\n\n  {\n\n    //动作的名称，用于引用该动作\n\n    \"name\": \"toggle-bold\",\n\n    \"mode\": \"command\",\n\n    \"argument\": \"Markdown: Toggle Bold\",\n\n    \"command\": \"toolbar.toggle\",\n\n  }\n\n]\n\n```",
   "toolbar.toolboxs.markdownDescription": "工具箱，例子如下：\n\n```jsonc\n\n\"toolbar.toolboxs\": [\n\n  {\n\n    \"name\": \"My Box\",\n\n    \"activate\": true,\n\n    \"view\": \"mars\",\n\n    \"layers\": [\n\n      {\n\n        \"name\": \"My Layer\",\n\n        \"icon\": \"person\",\n\n        \"tools\": [\n\n          {\n\n            \"name\": \"Open Extensions Folder\",\n\n            \"icon\": \"folder-library\",\n\n            \"actions\": [\"workbench.extensions.action.openExtensionsFolder\"]\n\n          }\n\n        ]\n\n      }\n\n    ]\n\n  }\n\n],\n\n```",
-  "toolbar.builtin.markdown.widthOfImageToBase64.markdownDescription": "Image地址 转 Base64 时的宽度参数，默认值为 0。为 0 时表示不改变宽度，使用图片的原始宽度。",
+  "toolbar.builtin.markdown.maxWidthOfImageToBase64.markdownDescription": "Image地址 转 Base64 时的最大宽度参数，默认值为 0。为 0 时表示不改变宽度，使用图片的原始宽度。",
   "toolbar.builtin.markdown.activate.markdownDescription": "是否激活内置的Markdown工具箱",
   "toolbar.builtin.markdown.unorderListStyle.markdownDescription": "设置内置Markdown工具箱无序列表的样式，可选值是`-`,`+`,`*`，默认值是`+`",
   "toolbar.builtin.markdown.orderListStyle.markdownDescription": "设置内置Markdown工具箱有序列表的样式，可选值是`1)`和`1.`，默认值是`1.`",

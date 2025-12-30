@@ -121,7 +121,7 @@ function getWebviewHtml(dataUrl: string, targetWidth: number, mime: string): str
         canvas.width = img.width;
         canvas.height = img.height;
 
-        if(targetWidth > 0) {
+        if(targetWidth > 0 && img.width > targetWidth) {
           const scale = targetWidth / img.width;
           const newHeight = img.height * scale;
           

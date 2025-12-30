@@ -102,7 +102,7 @@ export class CodeActionsProvider implements vscode.CodeActionProvider {
 		if (localImage?.url === undefined) {
 			return undefined;
 		}
-		const imageWidth = getConfig('builtin.markdown.widthOfImageToBase64', 0);
+		const imageWidth = getConfig('builtin.markdown.maxWidthOfImageToBase64', 0);
 
 		const base64 = await imageToBase64(localImage?.url, imageWidth)
 		if (base64 === undefined) {
